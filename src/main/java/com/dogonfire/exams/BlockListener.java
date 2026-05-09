@@ -84,7 +84,7 @@ public class BlockListener implements Listener
         }
     }
 
-    @EventHandler
+    @EventHandler(ignoreCancelled = true)
     public void onPlayerInteract(PlayerInteractEvent event)
     {
         Player player = event.getPlayer();
