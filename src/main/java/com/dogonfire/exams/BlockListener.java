@@ -114,19 +114,19 @@ public class BlockListener implements Listener
 
         String currentExam = StudentManager.getExamForStudent(player.getName());
 
-        if (currentExam == null)
+        if (currentExam == null || !currentExam.equals(examName))
         {
             ExamManager.handleNewExamPrerequisites(player, examName);
             event.setCancelled(true);
             return;
         }
 
-        if (!currentExam.equals(examName))
-        {
-            Exams.sendInfo(event.getPlayer(), ChatColor.RED + "You are already signed up for the " + ChatColor.YELLOW + currentExam + ChatColor.RED + " exam!");
-            event.setCancelled(true);
-            return;
-        }
+        // if (!currentExam.equals(examName))
+        // {
+        //     Exams.sendInfo(event.getPlayer(), ChatColor.RED + "You are already signed up for the " + ChatColor.YELLOW + currentExam + ChatColor.RED + " exam!");
+        //     event.setCancelled(true);
+        //     return;
+        // }
 
         if (ExamManager.isExamOpen(player.getWorld(), examName))
         {
