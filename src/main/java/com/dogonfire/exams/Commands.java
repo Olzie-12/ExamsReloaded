@@ -138,16 +138,16 @@ public class Commands
                         commandReset(sender, args[1]);
                         return true;
                     }
-                    if (args[0].equalsIgnoreCase("test"))
-                    {
-                        if (!player.isOp() && !player.hasPermission("exams.test"))
-                        {
-                            return false;
-                        }
+                    // if (args[0].equalsIgnoreCase("test"))
+                    // {
+                        // if (!player.isOp() && !player.hasPermission("exams.test"))
+                        // {
+                        //     return false;
+                        // }
 
-                        commandTest(sender, args[1]);
-                        return true;
-                    }
+                        // commandTest(sender, args[1]);
+                        // return true;
+                    // }
                     if (args[0].equalsIgnoreCase("studentinfo"))
                     {
                         if (!player.isOp() && !player.hasPermission("exams.studentinfo"))
