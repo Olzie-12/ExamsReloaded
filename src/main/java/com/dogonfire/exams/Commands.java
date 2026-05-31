@@ -372,7 +372,7 @@ public class Commands
         }
         if ((sender.isOp()) || (sender.hasPermission("exams.test")))
         {
-            sender.sendMessage(ChatColor.AQUA + "/exams test <exam>" + ChatColor.WHITE + " - Validates an exam");
+//            sender.sendMessage(ChatColor.AQUA + "/exams test <exam>" + ChatColor.WHITE + " - Validates an exam");
         }
         if ((sender.isOp()) || (sender.hasPermission("exams.studentinfo")))
         {
@@ -453,7 +453,7 @@ public class Commands
                     }
                     if (player.isOp() || PermissionsManager.hasPermission(player, "exams.test"))
                     {
-                        arg1.add("test");
+//                        arg1.add("test");
                     }
                 }
                 Iterable<String> FIRST_ARGUMENTS = arg1;
